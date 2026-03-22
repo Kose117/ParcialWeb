@@ -115,3 +115,6 @@ package-lock.json   # Opcional: muchos equipos sí lo suben
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+.metals/
+.bloop/
