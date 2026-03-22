@@ -1,10 +1,26 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# ================================
+#  BACKEND - Spring Boot / Maven
+# ================================
 
-### STS ###
+# Compiled output
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+# Maven wrapper (opcional: borrarlo si quieres subir el wrapper)
+# .mvn/wrapper/maven-wrapper.jar
+
+# Logs
+*.log
+logs/
+
+# Spring Boot devtools
+.factorypath
+
+# STS / Eclipse
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +29,89 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
+# IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
+out/
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
+
+# ================================
+#  FRONTEND - Angular
+# ================================
+
+# Dependencies (¡el principal culpable de los 10k archivos!)
+node_modules/
+
+# Build output
+dist/
+tmp/
+out-tsc/
+bazel-out/
+
+# Cache
+.angular/cache/
+.sass-cache/
+*.tsbuildinfo
+
+# Testing
+/coverage
+
+# Protractor
+/e2e/*.js
+/e2e/*.map
+
+# System files
+.DS_Store
+Thumbs.db
+
+
+# ================================
+#  ENTORNO Y CONFIGURACIÓN LOCAL
+# ================================
+
+# Variables de entorno (¡nunca subir credenciales!)
+.env
+.env.local
+.env.*.local
+*.env
+
+# Archivos de configuración local de Angular
+src/environments/environment.local.ts
+
+# ================================
+#  IDEs y EDITORES
+# ================================
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# JetBrains
+.idea/
+*.iml
+
+# ================================
+#  MISCELÁNEOS
+# ================================
+
+# npm / yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json   # Opcional: muchos equipos sí lo suben
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
